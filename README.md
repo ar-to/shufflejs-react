@@ -6,7 +6,7 @@
 
 # Getting Started ✨
 
-In process...
+In progress...but check [codesandbox](https://codesandbox.io/embed/react-testing-6m589?fontsize=14&hidenavigation=1&theme=dark) for demo.
 
 **Initial Boilerplate taken from [NPM Module Boilerplate](https://github.com/flexdinesh/npm-module-boilerplate)**
 
@@ -22,6 +22,7 @@ In process...
 * **[David-dm](https://david-dm.org/?success)** - WATCHING YOUR NODE.JS DEPENDENCIES
 * **[rimraf](https://www.npmjs.com/package/rimraf)** - The UNIX command rm -rf for node
 * **[gh-pages](https://www.npmjs.com/package/gh-pages)** - Publish files to a gh-pages branch on GitHub
+* **[shufflejs](https://www.npmjs.com/package/shufflejs)** - Publish files to a gh-pages branch on GitHub
 
 # Commands
 - `npm run clean` - Remove `lib/` directory
