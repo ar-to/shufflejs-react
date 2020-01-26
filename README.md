@@ -1,6 +1,6 @@
 # ShuffleJS-React
 
-[![dependencies Status](https://david-dm.org/ar-to/shufflejs-react/status.svg)](https://david-dm.org/flexdinesh/npm-module-boilerplate) [![devDependencies Status](https://david-dm.org/ar-to/shufflejs-react/dev-status.svg)](https://david-dm.org/flexdinesh/npm-module-boilerplate?type=dev) 
+[![dependencies Status](https://david-dm.org/ar-to/shufflejs-react/status.svg)](https://david-dm.org/ar-to/shufflejs-react) [![devDependencies Status](https://david-dm.org/ar-to/shufflejs-react/dev-status.svg)](https://david-dm.org/ar-to/shufflejs-react?type=dev) 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
 # Initial Boilerplate taken from [NPM Module Boilerplate](https://github.com/flexdinesh/npm-module-boilerplate)
