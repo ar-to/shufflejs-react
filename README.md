@@ -6,7 +6,7 @@
 
 # Getting Started ✨
 
-In progress...but check [codesandbox](https://codesandbox.io/embed/react-testing-6m589?fontsize=14&hidenavigation=1&theme=dark) for demo.
+In progress...but check [codesandbox](https://codesandbox.io/embed/react-testing-6m589?fontsize=14&hidenavigation=1&theme=dark) or [website](https://ar-to.github.io/shufflejs-react/) for demo.
 
 **Initial Boilerplate taken from [NPM Module Boilerplate](https://github.com/flexdinesh/npm-module-boilerplate)**
 
@@ -60,4 +60,4 @@ To update dependancies
 
 # License
 
-MIT © Dinesh Pandiyan
+MIT © Aricode00
