@@ -4,14 +4,11 @@
 [![dependencies Status](https://david-dm.org/ar-to/shufflejs-react/status.svg)](https://david-dm.org/ar-to/shufflejs-react) [![devDependencies Status](https://david-dm.org/ar-to/shufflejs-react/dev-status.svg)](https://david-dm.org/ar-to/shufflejs-react?type=dev) 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
-# Initial Boilerplate taken from [NPM Module Boilerplate](https://github.com/flexdinesh/npm-module-boilerplate)
-Some or most of the instructions below may have been changed
+# Getting Started ✨
 
-**Start developing your NPM module in seconds** ✨
+In process...
 
-Readymade boilerplate setup with all the best practices to kick start your npm/node module development.
-
-Happy hacking =)
+**Initial Boilerplate taken from [NPM Module Boilerplate](https://github.com/flexdinesh/npm-module-boilerplate)**
 
 # Features
 
@@ -43,7 +40,7 @@ Happy hacking =)
 - `npm run deploy` - deploy ./public to gh-pages at github
 
 
-# Getting Started
+# Getting Started Locally
 
 Run one or all of the following
 
