@@ -28,7 +28,7 @@ deploy:
   cleanup: false
   on:
     tags: true
-    # branch: master
+    branch: master
 
 # jobs:
 #   include:
