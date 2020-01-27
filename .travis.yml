@@ -21,12 +21,15 @@ node_js:
 jobs:
   include:
     - stage: build
+      provider: script
       script:
         - npm run test
         - npm run build
-      branches:
-        only:
-          - master
+      # branches:
+      #   only:
+      #     - master
+      on:
+        branch: master
     - stage: publish
       deploy:
         provider: npm
