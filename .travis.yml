@@ -5,9 +5,9 @@ node_js:
 # script:
 #   - npm run test
 #   - npm run build
-# branches:
-#   only:
-#     - master
+# # branches:
+# #   only:
+# #     - master
 
 # deploy:
 #   provider: npm
@@ -18,24 +18,38 @@ node_js:
 #     tags: true
 #     branch: master
 
-jobs:
-  include:
-    - stage: build
-      provider: script
-      script:
-        - npm run test
-        - npm run build
-      # branches:
-      #   only:
-      #     - master
-      on:
-        branch: master
-    - stage: publish
-      deploy:
-        provider: npm
-        email: $NPM_EMAIL
-        api_key: $NPM_API_TOKEN
-        skip_cleanup: true
-        on:
-          tags: true
-          branch: master
+# jobs:
+#   include:
+#     - stage: build
+#       provider: script
+#       script:
+#         - npm run test
+#         - npm run build
+#       # branches:
+#       #   only:
+#       #     - master
+#       on:
+#         branch: master
+#     - stage: publish
+#       deploy:
+#         provider: npm
+#         email: $NPM_EMAIL
+#         api_key: $NPM_API_TOKEN
+#         skip_cleanup: true
+#         on:
+#           tags: true
+#           branch: master
+
+deploy:
+  - provider: script
+    script:
+      - npm run test
+      - npm run build
+    on:
+      branch: master
+  - provider: npm
+    email: $NPM_EMAIL
+    api_key: $NPM_API_TOKEN
+    skip_cleanup: true
+    on:
+      tags: true
