@@ -52,17 +52,6 @@ To update dependancies
 - `npm i -g npm-check-updates && ncu` installs, shows all needed updates
 - `ncu -u && npm install` and prepares all for updating and install new upgrades
 
-# Publishing to NPM
-
-This is normally reserved for the collaborators and owner. This also requires access to the npm account and travisci accounts. 
-
-- tag release locally. Via git command works for version control but does not update package.json so a better way is to use `npm version` like so:
-```shell
-# %s will be replaces with the next minor patch version so 0.1.1 to 0.1.2
-npm version patch -m "Upgrade to %s for initial demo release"
-```
-- and push to github to trigger npm publish `git push --tags`
-
 # Contributing Workflow
 
 - fork Shufflejs-react
@@ -71,3 +60,27 @@ npm version patch -m "Upgrade to %s for initial demo release"
 - keep fork master sync with updtream `git pull --rebase upstream master` & `git push origin master`
 - use topic branches from your fork master to fix bugs or add features. Push them to fork origin and pull request to upstream from github.
 - Branch naming convention: anything except master. If the topic is related to a GitHub issue on the Shufflejs-react (upstream) project, then name it topic-# where # is the number of the GitHub issue, i.e. topic-13. You should consider creating an issue on that issue tracker before starting a new topic branch. That way, people will be able to know what you are doing with your topic branch.
+
+# Publishing to NPM
+
+This is normally reserved for the collaborators and owner. This also requires access to the npm account and travisci accounts. 
+
+- ensure npm api token is set as an environment variable inside travisci for all branches to avoid issues during build for missing key
+- make necessary updates and add as many commits as needed first
+- tag release locally. Via git command works for version control but does not update package.json so a better way is to use `npm version` which will create a new commit and also git tag:
+```shell
+# %s will be replaces with the next minor patch version so 0.1.1 to 0.1.2
+npm version patch -m "Upgrade to %s for initial demo release"
+```
+- push master to github to check CI builds successfully
+- push tags to github to trigger npm publish `git push --tags`
+
+# Deploy to Github Page
+
+This is normally reserved for the collaborators and owner. This also requires access to the npm account and travisci accounts. 
+
+- ensure npm api token is set as an environment variable inside travisci for all branches to avoid issues during build for missing key. Key is generated in github settings
+- push topic branch, fix issue
+- merge to master and check build is successful. The deployment to github pages only works on master. 
+
+
