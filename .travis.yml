@@ -1,4 +1,6 @@
 language: node_js
+os:
+  - linux
 node_js:
   - '12'
   - '10'
@@ -9,14 +11,24 @@ script:
 #   only:
 #     - master
 
+# deploy:
+#   provider: npm
+#   email: $NPM_EMAIL
+#   api_key: $NPM_API_TOKEN
+#   skip_cleanup: true
+#   on:
+#     tags: true
+#     branch: master
+
+# v2
 deploy:
   provider: npm
   email: $NPM_EMAIL
-  api_key: $NPM_API_TOKEN
-  skip_cleanup: true
+  api_token: $NPM_API_TOKEN
+  cleanup: true
   on:
     tags: true
-    branch: master
+    # branch: master
 
 # jobs:
 #   include:
