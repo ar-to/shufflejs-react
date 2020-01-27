@@ -52,6 +52,12 @@ To update dependancies
 - `npm i -g npm-check-updates && ncu` installs, shows all needed updates
 - `ncu -u && npm install` and prepares all for updating and install new upgrades
 
+## Online IDE and Pair Programming
+Another option is to setup this project on an online ide. 
+- [gitpod.io](gitpod.io) : tested and you can access it by forking the project and using `https://gitpod.io/#https://github.com/user/shufflejs-react-forked`
+- [codesandbox](https://codesandbox.io/) : works well for testing the library but has issues syncing the devdependancies and connecting to an existing github repo. See the demo for its implementation.
+- [codeanywhere](https://codeanywhere.com/) : not tested but great for pair programming
+
 # Contributing Workflow
 
 - fork Shufflejs-react
