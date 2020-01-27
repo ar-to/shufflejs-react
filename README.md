@@ -10,7 +10,7 @@ In progress...but check [codesandbox](https://codesandbox.io/embed/react-testing
 
 # Contributing
 
-Read the [Contributing.md](https://github.com/ar-to/shufflejs-react/blob/master/CONTRIBUTING.md) file for instructions on running locally and contributing.
+Read the [Contributing.md](https://github.com/ar-to/shufflejs-react/blob/master/.github/CONTRIBUTING.md) file for instructions on running locally and contributing.
 
 # License
 
