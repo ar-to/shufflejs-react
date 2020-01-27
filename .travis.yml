@@ -10,11 +10,16 @@ script:
 
 # v2
 deploy:
-  provider: npm
-  edge: true
-  email: $NPM_EMAIL
-  api_token: $NPM_API_TOKEN
-  cleanup: false
-  on:
-    tags: true
-    branch: master
+  - provider: npm
+    edge: true
+    email: $NPM_EMAIL
+    api_token: $NPM_API_TOKEN
+    cleanup: false
+    on:
+      tags: true
+      branch: master
+  - provider: pages
+    skip_cleanup: true
+    github_token: $GITHUB_TOKEN_PUBLIC_REPOS  # Set in the settings page of your repository, as a secure variable
+    on:
+      branch: master
