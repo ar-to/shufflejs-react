@@ -1,6 +1,6 @@
 {
   "name": "shufflejs-react",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "React component for ShuffleJs",
   "main": "./lib/index.js",
   "scripts": {
