@@ -2,18 +2,36 @@ language: node_js
 node_js:
   - '12'
   - '10'
-script:
-  - npm run test
-  - npm run build
-branches:
-  only:
-    - master
+# script:
+#   - npm run test
+#   - npm run build
+# branches:
+#   only:
+#     - master
 
-deploy:
-  provider: npm
-  email: $NPM_EMAIL
-  api_key: $NPM_API_TOKEN
-  skip_cleanup: true
-  on:
-    tags: true
-    branch: master
+# deploy:
+#   provider: npm
+#   email: $NPM_EMAIL
+#   api_key: $NPM_API_TOKEN
+#   skip_cleanup: true
+#   on:
+#     tags: true
+#     branch: master
+
+jobs:
+  include:
+    - stage: build
+      script:
+        - npm run test
+        - npm run build
+      branches:
+        only:
+          - master
+    - stage: publish
+      provider: npm
+      email: $NPM_EMAIL
+      api_key: $NPM_API_TOKEN
+      skip_cleanup: true
+      on:
+        tags: true
+        branch: master
