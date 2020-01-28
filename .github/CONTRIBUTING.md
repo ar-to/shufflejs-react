@@ -13,11 +13,16 @@ Read the instructions below for setting up the project locally and pushing a pul
 * **CI** - _TravisCI_ configuration setup
 * **Minify** - Built code will be minified for performance
 * **[Prettier](https://prettier.io)** - opinionated code formatter and sample taken from facebook's [create-react-app](https://github.com/facebook/create-react-app/blob/master/.prettierrc)
-* **[Parcel](https://parceljs.org/getting_started.html)** - Blazing fast, zero configuration web application bundler
+* **[Parcel](https://parceljs.org/getting_started.html)** - Blazing fast, zero configuration web application bundler. Parcel reads `.babelrc`
 * **[David-dm](https://david-dm.org/?success)** - WATCHING YOUR NODE.JS DEPENDENCIES
 * **[rimraf](https://www.npmjs.com/package/rimraf)** - The UNIX command rm -rf for node
 * **[gh-pages](https://www.npmjs.com/package/gh-pages)** - Publish files to a gh-pages branch on GitHub
 * **[shufflejs](https://www.npmjs.com/package/shufflejs)** - Publish files to a gh-pages branch on GitHub
+* **[Prop Types](https://reactjs.org/docs/typechecking-with-proptypes.html)** - Typechecking react components
+* **[React Bootstrap](https://react-bootstrap.github.io/getting-started/introduction)** - Using boostrap and optionally react boostrap
+* **[BEM](http://getbem.com/introduction/)** - Block Element Modifier is a methodology for css class names
+* **[BEM](http://getbem.com/introduction/)** - Block Element Modifier is a methodology for css class names
+* **[JQUERY](https://jquery.com/download/)** - Used for certain operations; may consider removing
 
 # Commands
 - `npm run clean` - Remove `lib/` directory
@@ -26,7 +31,7 @@ Read the instructions below for setting up the project locally and pushing a pul
 - `npm test:watch` - You can even re-run tests on file changes!
 - `npm test:prod` - Run tests with minified code.
 - `npm run test:examples` - Test written examples on pure JS for better understanding module usage.
-- `npm run lint` - Run ESlint with airbnb-config
+- `npm run lint` - Run ESlint with airbnb-config. Custom rule allows jsx and js files see [here](https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-filename-extension.md)
 - `npm run cover` - Get coverage report for your code.
 - `npm run build` - Babel will transpile ES6 => ES5 and minify the code.
 - `npm run prepublish` - Hook for npm. Do all the checks before publishing your module.
