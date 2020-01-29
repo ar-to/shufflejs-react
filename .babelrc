@@ -1,13 +1,19 @@
 {
+  "presets": [
+    "@babel/preset-env",
+    "@babel/preset-react"
+  ],
+  "plugins": [
+    "add-module-exports",
+    "@babel/plugin-proposal-class-properties",
+    "css-modules-transform"
+  ],
   "env": {
-    "development": {
-      "presets": ["env"],
-      "plugins": [
-        "add-module-exports"
-      ]
-    },
     "production": {
-      "presets": ["env", "minify"],
+      "presets": [
+        "@babel/preset-env",
+        "minify"
+      ],
       "plugins": [
         "add-module-exports"
       ]

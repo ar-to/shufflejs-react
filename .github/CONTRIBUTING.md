@@ -21,8 +21,8 @@ Read the instructions below for setting up the project locally and pushing a pul
 * **[Prop Types](https://reactjs.org/docs/typechecking-with-proptypes.html)** - Typechecking react components
 * **[React Bootstrap](https://react-bootstrap.github.io/getting-started/introduction)** - Using boostrap and optionally react boostrap
 * **[BEM](http://getbem.com/introduction/)** - Block Element Modifier is a methodology for css class names
-* **[BEM](http://getbem.com/introduction/)** - Block Element Modifier is a methodology for css class names
 * **[JQUERY](https://jquery.com/download/)** - Used for certain operations; may consider removing
+* **[babel-plugin-css-modules-transform](https://www.npmjs.com/package/babel-plugin-css-modules-transform)** - compiles css modules for babel
 
 # Commands
 - `npm run clean` - Remove `lib/` directory
@@ -45,6 +45,7 @@ Read the instructions below for setting up the project locally and pushing a pul
 
 Run one or all of the following
 
+- if you are contributing please follow the steps on the [Contributing Workflow](#Contributing-Workflow) and follow the steps below from your forked repo.
 - `git clone <>`
 - `npm install`
 - `pyenv shell 2.7.14` if you run into npm build errors specifically asking for missing python2. You must have pyenv setup and 2.7.14 installed.
@@ -56,6 +57,7 @@ To update dependancies
 - `npm update` only updates minor versions
 - `npm i -g npm-check-updates && ncu` installs, shows all needed updates
 - `ncu -u && npm install` and prepares all for updating and install new upgrades
+- `npx babel-upgrade` you may need to check for issues in babel to work with babel 7. Then run `npx babel-upgrade --write --install`
 
 ## Online IDE and Pair Programming
 Another option is to setup this project on an online ide. 
