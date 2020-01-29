@@ -21,6 +21,7 @@ deploy:
       branch: master
   - provider: pages
     skip_cleanup: true
+    local_dir: public # # defaults to root otherwise
     github_token: $GITHUB_TOKEN_PUBLIC_REPOS  # Set in the settings page of your repository, as a secure variable
     on:
       branch: master
