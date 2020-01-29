@@ -1,39 +1,39 @@
 {
   "Body Types": {
-    "body": {
-      "slug": "body",
-      "name": "Body",
-      "link": "/bodytypes/body",
+    "people": {
+      "slug": "people",
+      "name": "People",
+      "link": "/bodytypes/people",
       "count": null
     },
-    "breast": {
-      "slug": "breast",
-      "name": "Breast",
-      "link": "/bodytypes/breast",
+    "food": {
+      "slug": "food",
+      "name": "Food",
+      "link": "/bodytypes/food",
       "count": null
     },
-    "face": {
-      "slug": "face",
-      "name": "Face",
-      "link": "/bodytypes/face",
+    "cat": {
+      "slug": "cat",
+      "name": "Cat",
+      "link": "/bodytypes/cat",
       "count": null
     },
-    "skin": {
-      "slug": "skin",
-      "name": "Skin",
-      "link": "/bodytypes/skin",
+    "city": {
+      "slug": "city",
+      "name": "City",
+      "link": "/bodytypes/city",
       "count": null
     },
-    "injectables": {
-      "slug": "injectables",
-      "name": "Injectables",
-      "link": "/bodytypes/injectables",
+    "nature": {
+      "slug": "nature",
+      "name": "Nature",
+      "link": "/bodytypes/nature",
       "count": null
     },
-    "nonsurgical": {
-      "slug": "nonsurgical",
-      "name": "Nonsurgical",
-      "link": "/bodytypes/nonsurgical",
+    "abstract": {
+      "slug": "abstract",
+      "name": "Abstract",
+      "link": "/bodytypes/abstract",
       "count": null
     }
   }

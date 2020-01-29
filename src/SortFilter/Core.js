@@ -170,7 +170,7 @@ class Core extends Component {
       <div className="sort-mainblock">
         <div className="sort-mainblock__sorting">
           <div className="row">
-            <Search onKeyUp={this.handleSearchKeyup} />
+            {/* <Search onKeyUp={this.handleSearchKeyup} /> */}
             <SortButtons onClickByName={this.sortByName} onClickAll={this.sortAll} taxonomies={taxonomiesBodyTypeNames} allTrue sortAllText="All" />
             {/* <SelectBoxes onClickByName={this.sortByText} taxonomies={taxonomies} /> */}
           </div>

@@ -11,13 +11,12 @@ export default function App() {
   // const taxonomies = '';
   return (
     <div className="App container">
-      <h1>Hello CodeSandbox</h1>
-      <h2>Start editing to see some magic happen!</h2>
+      <h1>Hello!</h1>
+      <h2>Start clicking to see some magic happen!</h2>
       <h3>
         ShuffleJS-React works::
         {awesomeFunction()}
       </h3>
-      <p>also check console</p>
       <SortFilter defaultSort={defaultSort} taxonomies={taxonomies} itemSelector={itemSelector}>
         <Elements records={records} itemSelector={itemSelector} />
       </SortFilter>

@@ -1,5 +1,6 @@
 import SortFilter from './SortFilter';
 
+//sample functions for testing
 const defaultAwesomeFunction = (name) => {
   const returnStr = `I am the Default Awesome Function, fellow comrade! - ${name}`;
   return returnStr;
@@ -8,8 +9,6 @@ const defaultAwesomeFunction = (name) => {
 const awesomeFunction = () => 'I am just an Awesome Function';
 
 export default defaultAwesomeFunction;
-
-// export { awesomeFunction };
 
 export {
   SortFilter,
