@@ -1,6 +1,6 @@
 /* eslint-disable no-console */
 const defaultAwesomeFunction = require('../lib').default;
-const { awesomeFunction } = require('../lib');
+const { awesomeFunction, SortFilter } = require('../lib');
 
 const defaultVal = defaultAwesomeFunction('Dinesh');
 const val = awesomeFunction();
@@ -9,3 +9,14 @@ const val = awesomeFunction();
 console.log(defaultVal);
 // val === 'I am just an Awesome Function'
 console.log(val);
+/**
+ * [Function: SortFilter] {
+  propTypes: {
+    defaultSort: [Function: bound checkType],
+    taxonomies: [Function: bound checkType],
+    itemSelector: [Function: bound checkType],
+    children: [Function: bound checkType]
+  }
+}
+ */
+console.log(SortFilter);
