@@ -68,6 +68,7 @@ Another option is to setup this project on an online ide.
 
 # Contributing Workflow
 
+- read [Contributors vs Collaborators](https://github.com/CoolProp/CoolProp/wiki/Contributors-vs-Collaborators) by CoolProp for a great intro to this flow
 - fork Shufflejs-react
 - clone fork locally
 - add upstream to git remote `git remote add upstream git@github.com:ar-to/shufflejs-react.git`
@@ -113,4 +114,6 @@ This is normally reserved for the collaborators and owner. This also requires ac
 - `git push origin master`
 - `git push origin --tags`
 
-This will update github pages and publish to npm with new version
+This will update github pages and publish to npm with new version. Its important to leave the push of tags for last and until you are sure that what you are pushing passes all of the tests and even deploys to github correctly. This is why pushing to master helps check this. In case something else happens, you can fix it and then patch tag and start the process again before pushing the tags to publish to npm.
+
+Also, you do not need to publish to npm for every push to master, hense why only for semantic versions (patch, minor, major, etc)
