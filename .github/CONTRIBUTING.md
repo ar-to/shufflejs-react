@@ -86,6 +86,7 @@ This is normally reserved for the collaborators and owner. This also requires ac
 # %s will be replaces with the next minor patch version so 0.1.1 to 0.1.2
 npm version patch -m "Upgrade to %s for initial demo release"
 ```
+- `npm run prepublish` to check lib/ and tests
 - push master to github to check CI builds successfully
 - push tags to github to trigger npm publish `git push --tags`
 
@@ -95,6 +96,21 @@ This is normally reserved for the collaborators and owner. This also requires ac
 
 - ensure npm api token is set as an environment variable inside travisci for all branches to avoid issues during build for missing key. Key is generated in github settings
 - push topic branch, fix issue
+- `npm run predeploy` to update public/ so CI/CD can update github page
 - merge to master and check build is successful. The deployment to github pages only works on master. 
 
+# Publish & Deploy Summary
 
+This is normally reserved for the collaborators and owner. This also requires access to the npm account and travisci accounts. 
+
+- create topic branch
+- commit
+- `npm run prepublish` to check lib/ and tests
+- `npm run predeploy` to update public/ so CI/CD can update github page
+- commit updates if necessary
+- push topic branch to remote or merge into master 
+- `npm version patch -m "Upgrade to %s for initial demo release"` replace patch with minor, major as needed
+- `git push origin master`
+- `git push origin --tags`
+
+This will update github pages and publish to npm with new version
