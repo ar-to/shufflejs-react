@@ -1,0 +1,40 @@
+{
+  "Body Types": {
+    "body": {
+      "slug": "body",
+      "name": "Body",
+      "link": "/bodytypes/body",
+      "count": null
+    },
+    "breast": {
+      "slug": "breast",
+      "name": "Breast",
+      "link": "/bodytypes/breast",
+      "count": null
+    },
+    "face": {
+      "slug": "face",
+      "name": "Face",
+      "link": "/bodytypes/face",
+      "count": null
+    },
+    "skin": {
+      "slug": "skin",
+      "name": "Skin",
+      "link": "/bodytypes/skin",
+      "count": null
+    },
+    "injectables": {
+      "slug": "injectables",
+      "name": "Injectables",
+      "link": "/bodytypes/injectables",
+      "count": null
+    },
+    "nonsurgical": {
+      "slug": "nonsurgical",
+      "name": "Nonsurgical",
+      "link": "/bodytypes/nonsurgical",
+      "count": null
+    }
+  }
+}
