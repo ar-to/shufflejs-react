@@ -31,6 +31,7 @@ Read the instructions below for setting up the project locally and pushing a pul
 - `npm test:watch` - You can even re-run tests on file changes!
 - `npm test:prod` - Run tests with minified code.
 - `npm run test:examples` - Test written examples on pure JS for better understanding module usage.
+- `npm run text:babel` - Test working babel version. This is important for debuggin error during tests related to babel not being found correctly
 - `npm run lint` - Run ESlint with airbnb-config. Custom rule allows jsx and js files see [here](https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-filename-extension.md)
 - `npm run cover` - Get coverage report for your code.
 - `npm run build` - Babel will transpile ES6 => ES5 and minify the code.
