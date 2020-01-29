@@ -5,7 +5,7 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import Shuffle from 'shufflejs';
 import SortButtons from './SortButtons';
-import Search from './Search';
+// import Search from './Search';
 // import SelectBoxes from './SelectBoxes';
 
 // const Shuffle = window.Shuffle;
