@@ -26,7 +26,7 @@ Read the instructions below for setting up the project locally and pushing a pul
 
 # Commands
 - `npm run clean` - Remove `lib/` directory
-- `npm test` - Run tests with linting and coverage results.
+- `npm test` - Run tests with linting and tests only.
 - `npm test:only` - Run tests without linting or coverage.
 - `npm test:watch` - You can even re-run tests on file changes!
 - `npm test:prod` - Run tests with minified code.
