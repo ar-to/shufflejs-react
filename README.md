@@ -5,6 +5,8 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 ![node][node-url]
 ![GitHub package.json version][version-url]
+![npm (prod) dependency version][react-url]
+![npm (prod) dependency version][shufflejs-url]
 ![GitHub issues][issues-url]
 ![Website][website-url]
 ![GitHub last commit (branch)][master-commit-url]
@@ -111,6 +113,8 @@ MIT © Aricode00
 
 [node-url]: https://img.shields.io/node/v/shufflejs-react
 [version-url]: https://img.shields.io/github/package-json/v/ar-to/shufflejs-react
+[react-url]: https://img.shields.io/npm/dependency-version/shufflejs-react/react
+[shufflejs-url]: https://img.shields.io/npm/dependency-version/shufflejs-react/shufflejs
 [issues-url]: https://img.shields.io/github/issues/ar-to/shufflejs-react
 [website-url]: https://img.shields.io/website?url=https%3A%2F%2Far-to.github.io%2Fshufflejs-react%2F
 [master-commit-url]:  https://img.shields.io/github/last-commit/ar-to/shufflejs-react/master?label=last%20commit%3Amaster
