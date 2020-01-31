@@ -27,7 +27,6 @@ class Core extends Component {
     /**
      * Kick off the network request and update the state once it returns.
      */
-    // console.log('this.props.taxonomies',this.props.taxonomies)
     const { taxonomies } = this.props;
     this._loadProps()
       .then(() => {
@@ -35,7 +34,6 @@ class Core extends Component {
           // taxonomies,
           taxonomiesBodyTypeNames: Object.keys(taxonomies['Body Types'])
         });
-        // this.shuffle.filter(props.defaultSort);
       });
   }
 
@@ -88,34 +86,12 @@ class Core extends Component {
     const searchText = evt.target.value.toLowerCase();
 
     function filterCallback(element) {
-      // console.log('filter element: ', element);
       const titleElement = element.querySelector('.sortblock__title');
       const titleText = titleElement.textContent.toLowerCase().trim();
-      // var t = titleText.indexOf(searchText);
-      // var f = titleText.indexOf(searchText) !== -1;
-      // console.log('titleElement: ', titleElement);
-      // console.log('titleText: ', titleText);
-      // console.log('t: ', t);
-      // console.log('f: ', f);
-
       return titleText.indexOf(searchText) !== -1;
     }
 
     this.shuffle.filter(filterCallback);
-
-    // this.shuffle.filter(function (element, shuffle) {
-    //   // console.log('filter element: ', element);
-    //   var titleElement = element.querySelector('.sortblock__title');
-    //   var titleText = titleElement.textContent.toLowerCase().trim();
-    //   // var t = titleText.indexOf(searchText);
-    //   // var f = titleText.indexOf(searchText) !== -1;
-    //   // console.log('titleElement: ', titleElement);
-    //   // console.log('titleText: ', titleText);
-    //   // console.log('t: ', t);
-    //   // console.log('f: ', f);
-
-    //   return titleText.indexOf(searchText) !== -1;
-    // });
   };
 
   /**
@@ -124,7 +100,6 @@ class Core extends Component {
    */
   sortByName = (e) => {
     // e.preventDefault();
-    // this.shuffle.filter(e.target.textContent);
     putSearchParams(e.target.textContent);
     this.sortFromUrlSearch();
   };
@@ -134,17 +109,22 @@ class Core extends Component {
    * @param {string} text
    */
   sortByText = (text) => {
-    // this.shuffle.filter(text);
     putSearchParams(text);
     this.sortFromUrlSearch();
   };
 
   /**
    * filter the shuffle by the search params of the url
+   * checks if the search params exists else it defaults
    */
   sortFromUrlSearch = () => {
     const searchParams = jsUcfirst(window.location.search.slice(1));
-    this.shuffle.filter(searchParams);
+    console.log('ss',searchParams)
+    const { defaultSort } = this.props;
+    if (searchParams) {
+      return this.shuffle.filter(searchParams);
+    }
+    return this.shuffle.filter(defaultSort);
   };
 
   /**
