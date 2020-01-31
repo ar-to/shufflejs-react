@@ -6,7 +6,7 @@ import taxonomies from './data/taxonomiesObject.json';
 import records from './data/basicRecords.json';
 
 export default function App() {
-  const defaultSort = '';// empty string defaults to show all
+  const defaultSort = 'Cat';// empty string defaults to show all
   const itemSelector = 'sortblock';
   // const taxonomies = '';
   return (

@@ -107,7 +107,7 @@ This is normally reserved for the collaborators and owner. This also requires ac
 - create topic branch
 - commit
 - `npm run prepublish` to check lib/ and tests
-- `npm run predeploy` to update public/ so CI/CD can update github page
+- `npm run predeploy` to update public/ so CI/CD can update github page. Only necessary if updating the website
 - commit updates if necessary
 - push topic branch to remote or merge into master 
 - `npm version patch -m "Upgrade to %s for initial demo release"` replace patch with minor, major as needed

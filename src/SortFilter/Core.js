@@ -119,7 +119,6 @@ class Core extends Component {
    */
   sortFromUrlSearch = () => {
     const searchParams = jsUcfirst(window.location.search.slice(1));
-    console.log('ss',searchParams)
     const { defaultSort } = this.props;
     if (searchParams) {
       return this.shuffle.filter(searchParams);
@@ -142,7 +141,6 @@ class Core extends Component {
    * makes the button link hide/display text
    */
   toggleSlide = () => {
-    // console.log('ggggg', this.slider);
     this.slider.classList.toggle('slider-closed');
   }
 
