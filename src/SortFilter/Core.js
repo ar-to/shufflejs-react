@@ -5,6 +5,7 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import Shuffle from 'shufflejs';
 import SortButtons from './SortButtons';
+import { jsUcfirst, putSearchParams } from '../Utils';
 // import Search from './Search';
 // import SelectBoxes from './SelectBoxes';
 
@@ -29,12 +30,12 @@ class Core extends Component {
     // console.log('this.props.taxonomies',this.props.taxonomies)
     const { taxonomies } = this.props;
     this._loadProps()
-      .then((props) => {
+      .then(() => {
         this.setState({
           // taxonomies,
           taxonomiesBodyTypeNames: Object.keys(taxonomies['Body Types'])
         });
-        this.shuffle.filter(props.defaultSort);
+        // this.shuffle.filter(props.defaultSort);
       });
   }
 
@@ -50,6 +51,7 @@ class Core extends Component {
       sizer: this.sizer.current,
       // initialSort: options
     });
+    this.sortFromUrlSearch();
   }
 
   componentDidUpdate() {
@@ -121,17 +123,29 @@ class Core extends Component {
    * @param {Object} e to the event target of the element
    */
   sortByName = (e) => {
-    e.preventDefault();
-    this.shuffle.filter(e.target.textContent);
-  }
+    // e.preventDefault();
+    // this.shuffle.filter(e.target.textContent);
+    putSearchParams(e.target.textContent);
+    this.sortFromUrlSearch();
+  };
 
   /**
    * Sort by the specific text
    * @param {string} text
    */
   sortByText = (text) => {
-    this.shuffle.filter(text);
-  }
+    // this.shuffle.filter(text);
+    putSearchParams(text);
+    this.sortFromUrlSearch();
+  };
+
+  /**
+   * filter the shuffle by the search params of the url
+   */
+  sortFromUrlSearch = () => {
+    const searchParams = jsUcfirst(window.location.search.slice(1));
+    this.shuffle.filter(searchParams);
+  };
 
   /**
    * Show all elements using shufflejs provided string
@@ -139,6 +153,7 @@ class Core extends Component {
    */
   sortAll = (e) => {
     e.preventDefault();
+    putSearchParams('');
     this.shuffle.filter(Shuffle.ALL_ITEMS);
   }
 
