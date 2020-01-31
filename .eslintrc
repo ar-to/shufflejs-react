@@ -6,6 +6,7 @@
     "browser": true// important so document & window are not undefined
   },
   "rules": {
+    "linebreak-style": 0, // linebreak-style: ["error", "windows"] is better but seems to also cause errors in linux
     "comma-dangle": ["error", "only-multiline"],
     "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
     "no-underscore-dangle": "off",

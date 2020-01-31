@@ -25,7 +25,7 @@ export default function SortFilter(props) {
 }
 
 SortFilter.propTypes = {
-  defaultSort: PropTypes.string.isRequired,
+  defaultSort: PropTypes.string,
   // taxonomies: PropTypes.arrayOf(PropTypes.object).isRequired,
   taxonomies: PropTypes.objectOf(PropTypes.object).isRequired,
   itemSelector: PropTypes.string.isRequired,
@@ -34,4 +34,8 @@ SortFilter.propTypes = {
     PropTypes.element,
     PropTypes.array,
   ]).isRequired
+};
+
+SortFilter.defaultProps = {
+  defaultSort: ''
 };
