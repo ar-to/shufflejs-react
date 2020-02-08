@@ -32,6 +32,9 @@ Read the instructions below for setting up the project locally and pushing a pul
 - `npm test:prod` - Run tests with minified code.
 - `npm run test:examples` - Test written examples on pure JS for better understanding module usage.
 - `npm run text:babel` - Test working babel version. This is important for debuggin error during tests related to babel not being found correctly
+- `npm run test:babelv7` - test dependancies for babel 7. Useful for checking if anything is needed.
+- `npm run test:jest` - tests react components and shows coverage
+- `npm run test:jest-update` - updates react component snapshots
 - `npm run lint` - Run ESlint with airbnb-config. Custom rule allows jsx and js files see [here](https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-filename-extension.md)
 - `npm run cover` - Get coverage report for your code.
 - `npm run build` - Babel will transpile ES6 => ES5 and minify the code.
@@ -58,8 +61,21 @@ To update dependancies
 - `npm update` only updates minor versions
 - `npm i -g npm-check-updates && ncu` installs, shows all needed updates
 - `ncu -u && npm install` and prepares all for updating and install new upgrades
-- `npx babel-upgrade` you may need to check for issues in babel to work with babel 7. Then run `npx babel-upgrade --write --install`
+- `npx babel-upgrade or npm run test:babelv7` you may need to check for issues in babel to work with babel 7. Then run `npx babel-upgrade --write --install`
 
+# Testing
+
+This project takes advantage of two libraries because mocha was the default before jest was added. This can be refactor on future updates to just use jest.
+
+##  Via Mocha
+
+Mocha by [default](https://mochajs.org/#the-test-directory) checks in the `./tests/*.sj` directory. 
+
+## Via Jest
+
+Jest by [default](https://jestjs.io/docs/en/configuration#testregex-string--arraystring) checks `(/__tests__/.*|(\\.|/)(test|spec))\\.[jt]sx?$`.
+
+ 
 ## Online IDE and Pair Programming
 Another option is to setup this project on an online ide. 
 - [gitpod.io](gitpod.io) : tested and you can access it by forking the project and using `https://gitpod.io/#https://github.com/user/shufflejs-react-forked`
@@ -105,6 +121,7 @@ This is normally reserved for the collaborators and owner. This also requires ac
 This is normally reserved for the collaborators and owner. This also requires access to the npm account and travisci accounts. 
 
 - create topic branch
+- run tests `npm run test:all` and for react `npm run test:jest`
 - commit
 - `npm run prepublish` to check lib/ and tests
 - `npm run predeploy` to update public/ so CI/CD can update github page. Only necessary if updating the website
