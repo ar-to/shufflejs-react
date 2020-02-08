@@ -1,6 +1,6 @@
 {
   "name": "shufflejs-react",
-  "version": "0.2.3",
+  "version": "0.2.4",
   "description": "React component for ShuffleJs",
   "main": "./lib/index.js",
   "scripts": {
@@ -51,7 +51,7 @@
     "url": "https://github.com/ar-to/shufflejs-react/issues"
   },
   "nyc": {
-    "exclude": "src/SortFilter/**/*.js" 
+    "exclude": "src/SortFilter/**/*.js"
   },
   "homepage": "https://ar-to.github.io/shufflejs-react/",
   "devDependencies": {
