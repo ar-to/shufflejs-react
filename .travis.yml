@@ -5,7 +5,8 @@ node_js:
   - '12'
   # - '10'
 script:
-  - npm run test #eslint & test
+  - npm run test:all #eslint & test
+  - npm run test:jest #react
   - npm run build #build lib/
   - npm run predeploy #build public/
 
