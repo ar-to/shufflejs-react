@@ -50,6 +50,9 @@
   "bugs": {
     "url": "https://github.com/ar-to/shufflejs-react/issues"
   },
+  "nyc": {
+    "exclude": "src/SortFilter/**/*.js" 
+  },
   "homepage": "https://ar-to.github.io/shufflejs-react/",
   "devDependencies": {
     "@babel/cli": "^7.0.0",
