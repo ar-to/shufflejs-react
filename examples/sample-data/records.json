@@ -1,0 +1,69 @@
+[
+  {
+    "id": 4,
+    "values": {
+      "datechanged": "2019-03-22 02:29:38",
+      "id": 4,
+      "slug": "brow-lift-las-vegas-nv",
+      "datecreated": "2018-06-20 07:16:49",
+      "datepublish": "2018-06-20 07:16:19",
+      "datedepublish": null,
+      "ownerid": 1,
+      "status": "published",
+      "title": "Brow Lift (Browplasty, Forehead Lift, Endoscopic Brow Lift) – Las Vegas, NV",
+      "listing_title": "Brow Lift",
+      "portrait": {
+        "file": "2018-05/procedure-face-browlift.png",
+        "title": "Brow Lift",
+        "alt": "Brow Lift"
+      },
+      "teaser": "<p>A browplasty is a surgical procedure that lifts and tightens the forehead skin to reduce horizontal lines and wrinkles for a youthful appearance.</p>\r\n",
+      "body_top": "<h3>about brow lift surgery</h3>\r\n\r\n<p>Board-certified Plastic Surgeon, Dr. Frank L. Stile at Stile Aesthetics in Las Vegas, NV, understands that the forehead and eyebrow region often shows noticeable signs of early aging. Loosening of the forehead skin and muscles can cause deepening forehead wrinkles, drooping eyebrows, and even worsened eyelid hooding. An well-performed forehead lift, browplasty, or brow lift can address these issues to create a natural and youthful appearance.</p>\r\n\r\n<p>During a brow lift, the forehead skin is lifted and tightened.This process repositions and raises the eyebrows to soften frown lines for a smoother appearance. It also significantly diminishes the horizontal lines and furrows that can make patients appear angry, sad, tired, or aged.The result is a more youthful,awake, and refreshed profile. A brow lift may be performed alone, or in conjunction with other procedures, such as a facelift, or eyelid surgery. Brow lift surgery is individualized for each patient and Dr. Stile will recommend a specific technique that meets your needs for optimal results.</p>\r\n\r\n<h3>ideal candidates</h3>\r\n\r\n<p>The best candidates for brow lift surgery:</p>\r\n\r\n<ul class=\"add--list-style-disk\">\r\n<li>Have excess skin creating folds and creases</li>\r\n    <li>Droopy eyelids and eyebrows</li>\r\n    <li>Dynamic wrinkles on their brow</li>\r\n    <li>Want a long-lasting solution</li>\r\n    <li>Do not need a full facelift</li>\r\n</ul>\r\n<h3>what to expect</h3>\r\n\r\n<p>Most brow lift surgeries are performed with the patient under general anesthesia as an outpatient surgery at an accredited hospital or surgical center. For brow surgery, small incisions are placed in low visibility areas, such as behind the hairline or in the eyebrows. The most common brow lift techniques are the open brow lift, limited incision brow lift, and endoscopic brow lift, which will be chosen based on the patient's goals and their individual features. Once the incisions are made, the surgeon will remove any excess skin, then smooth and re-position the muscles and soft tissue to smooth wrinkles and lines while elevating the eyebrows to an appropriate level.</p>\r\n\r\n<h3>anticipated results</h3>\r\n\r\n<p>Brow lift surgery usually takes about 2 hours and once the patient has been cleared by the doctor, they may be taken home by a responsible adult to recover at home. Most patients take 1–3 weeks to recover after a brow lift, but they are generally able to drive and return to work in 2 weeks. For the first days after the surgery, patients should expect some temporary bruising, discomfort, tightness, and numbness. The doctor will talk to each patient about what they need to do during their recovery and provide tips for an easier recovery. Patients will need to return for a follow-up appointment in 1 week to have their sutures removed and so their healing progress can be checked. While visible improvements can be seen immediately, the final results of the brow lift are usually seen about 4–6 months after the surgery.</p>\r\n",
+      "body_bottom": "<h3>awake, alert, ageless</h3>\r\n\r\n<p>Many patients fear that a brow lift will leave them looking permanently surprised, unnaturally wide eyed, or like they have obviously had plastic surgery. A plastic surgeon with experience in brow lift surgery will focus on creating a younger, natural-looking appearance that refreshes the face. Using simulation software, the surgeon and patient can decide how dramatic or how subtle they want the results to be. After brow lift surgery, patients will look more awake, more alert, and more like the age they feel.</p>\r\n",
+      "seo": "{\"title\":\"\",\"description\":\"\",\"shortlink\":\"\",\"canonical\":\"\",\"robots\":\"index, follow\",\"ogtype\":\"\",\"keywords\":\"\"}",
+      "image_seo": null,
+      "templatefields": {
+        "id": null,
+        "values": [],
+        "taxonomy": null,
+        "relation": null,
+        "contenttype": null,
+        "user": {
+          "id": 1,
+          "username": "root",
+          "password": null,
+          "email": "ari@ehspook.com",
+          "lastseen": {
+            "date": "2020-01-20 22:42:33.000000",
+            "timezone_type": 3,
+            "timezone": "UTC"
+          },
+          "lastip": "127.0.0.1",
+          "displayname": "Frank",
+          "stack": [
+            "files://2020-01/asset-1.png",
+            "files://agriculture-cereals-field-621.jpg",
+            "files://2018-05/video-thumbnail-58.jpg",
+            "files://2018-05/video-thumbnail-57.jpg",
+            "files://personnel/2019/makinlee-edwards.jpg",
+            "files://personnel/2019/nanu-kaimikaua.jpg",
+            "files://personnel/personnel-placeholder.jpg"
+          ],
+          "enabled": true,
+          "shadowpassword": null,
+          "shadowtoken": null,
+          "shadowvalidity": null,
+          "failedlogins": 0,
+          "throttleduntil": null,
+          "roles": [
+            "root",
+            "everyone"
+          ]
+        },
+        "sortorder": null,
+        "config": null,
+        "group": null
+      }
+    }
+  }
+]

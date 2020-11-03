@@ -5,6 +5,8 @@ import taxonomies from './data/taxonomiesObject.json';
 // import proceduresStringArray from './data/proceduresStringArray.json';
 import records from './data/basicRecords.json';
 
+var taxonomiesx = ["People", "Cats","Other"]
+
 export default function App() {
   const defaultSort = 'Cat';// empty string defaults to show all
   const itemSelector = 'sortblock';
@@ -17,7 +19,7 @@ export default function App() {
         ShuffleJS-React works::
         {awesomeFunction()}
       </h3>
-      <SortFilter defaultSort={defaultSort} taxonomies={taxonomies} itemSelector={itemSelector}>
+      <SortFilter defaultSort={defaultSort} taxonomies={taxonomiesx} itemSelector={itemSelector}>
         <Elements records={records} itemSelector={itemSelector} />
       </SortFilter>
     </div>

@@ -158,13 +158,13 @@ class Core extends Component {
 
   render() {
     const { taxonomiesBodyTypeNames } = this.state;
-    const { children, itemSelector } = this.props;
+    const { children, itemSelector, taxonomies } = this.props;
     return (
       <div className="sort-mainblock">
         <div className="sort-mainblock__sorting">
           <div className="row">
             {/* <Search onKeyUp={this.handleSearchKeyup} /> */}
-            <SortButtons onClickByName={this.sortByName} onClickAll={this.sortAll} taxonomies={taxonomiesBodyTypeNames} allTrue sortAllText="All" />
+            <SortButtons onClickByName={this.sortByName} onClickAll={this.sortAll} taxonomies={taxonomies} allTrue sortAllText="All" />
             {/* <SelectBoxes onClickByName={this.sortByText} taxonomies={taxonomies} /> */}
           </div>
         </div>
